@@ -3,7 +3,8 @@
 <h1><%= @code.code %></h1>
 
 <p>Address / Details:</p>
-<%= @code.address %>
+<%= @code.address %><br>
+<%= link_to "Google Maps It", "http://maps.google.com/?q=#{@code.address}", :class => 'cta'%>
 <br><br><br>
 <% else %>
 	<h1>Oops, there's nothing here - try another Code:</h1>
