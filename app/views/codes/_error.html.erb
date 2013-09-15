@@ -1,0 +1,9 @@
+<% if @code.errors.any? %>
+    <div id="errorExplanation" style="color: red">
+      <h3>Whoops!</h3>
+      <% @code.errors.full_messages.each do |msg| %>
+      <p><%= msg %></p>
+      <% end %>
+      </ul>
+    </div>
+<% end %>

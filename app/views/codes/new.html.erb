@@ -1,0 +1,19 @@
+<br>
+<h1>Generate WhereCode</h1>
+<%= form_for :wherecode, :url => codes_path do |f| %>
+<%= render 'error' %>
+  <p>Choose your Code<br> 
+	<% f.label :code %>
+    <%= f.text_field :code %>
+  </p>
+  <p style="font-size: 11px">You'll be able to share your code with the link <br>
+	www.wherecode.com/yourcode</p> 
+  <p>Enter address / details<br>
+    <% f.label :address %>
+    <%= f.text_area :address %>
+  </p>
+ 
+  <p>
+    <%= f.submit 'Save WhereCode', :class => 'cta' %>
+  </p>
+<% end %>

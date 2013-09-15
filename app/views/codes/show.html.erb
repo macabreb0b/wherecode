@@ -1,0 +1,22 @@
+<br>
+<% if @code %>
+<h1><%= @code.code %></h1>
+
+<p>Address / Details:</p>
+<%= @code.address %>
+<br><br><br><br>
+<% else %>
+	<h1>Oops, there's nothing here - try another Code:</h1>
+	<p>(Remember that Codes can only contain letters, numbers and '_')</p>
+	<%= form_tag find_path, method: :get do %>
+	<p>
+		<%= text_field_tag :code %><br><br>
+		<%= submit_tag("submit", name: nil, class: 'cta') %>
+	</p>
+	<% end %>
+<br>
+<p>OR</p>
+<% end %>
+
+
+<%= link_to "Create Your Own", new_code_path, :class => 'cta' %>
