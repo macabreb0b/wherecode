@@ -27,16 +27,24 @@ body {
 	padding: .4em 0;
 	margin: 0;
 }
-#header h1 {
+#header h1,
+#header h2 {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
 }
+h2 {
+	font-size: 20px;
+}
 h1 a,
 h1 a:hover,
 h1 a:link,
-h1 a:visited {
+h1 a:visited,
+h2 a,
+h2 a:hover,
+h2 a:link
+h2 a:visited {
 	text-decoration: none;
 	color: #fff;
 }
@@ -62,7 +70,7 @@ textarea,
 	text-indent:0;
 	display:inline-block;
 	color:#fff;
-	font-size:12px;
+	font-size:13px;
 	font-weight:normal;
 	font-style:normal;
 	height:27px;
@@ -86,6 +94,8 @@ input[type="submit"] {
 	border-image-outset: none;
 	border-image-repeat: none;
 	box-sizing: border-box;
+	-webkit-appearance: none;
+	white-space: normal;
 }
 a.cta{
 	background: #E183E6;
@@ -93,3 +103,21 @@ a.cta{
 a.cta:hover {
 	background: #DD40E6;
 }
+@media only screen and (max-device-width: 480px) {
+	a.cta{
+		width: 100%;
+		background: #E183E6;
+	}
+	.cta {
+		width: 100%;
+		background: #ffc477;
+	}
+	input,
+	textarea,
+	.cta {
+		width: 100%;
+	}
+	#content {
+		width: 100%;
+	}
+	}

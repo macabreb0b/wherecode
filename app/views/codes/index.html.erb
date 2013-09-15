@@ -1,5 +1,5 @@
 <br>
-<h1>Enter WhereCode</h1>
+<h1>Enter Code</h1>
 <%= form_tag find_path, method: :get do %>
 <p>
 <%= text_field_tag :code %><br><br>
@@ -11,9 +11,3 @@
 
 <%= link_to "Create Your Own", new_code_path, :class => 'cta' %>
 
-<!--
-in method:
-@code = Code.find_by_code(params[:code])
-
-in form:
-form_tag code_path(:code)-->
