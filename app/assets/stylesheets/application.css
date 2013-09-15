@@ -119,13 +119,13 @@ a.cta:hover {
 		background: #E183E6;
 	}
 	.cta {
-		width: 100%;
 		background: #ffc477;
 	}
 	input,
 	textarea,
 	.cta {
-		width: 100%;
+		width: 70%
+		height: 20%;
 	}
 	#content {
 		max-width: 400px;
