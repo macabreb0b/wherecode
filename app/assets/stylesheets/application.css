@@ -119,6 +119,6 @@ a.cta:hover {
 		width: 100%;
 	}
 	#content {
-		width: 100%;
+		max-width: 480px;
 	}
 	}
