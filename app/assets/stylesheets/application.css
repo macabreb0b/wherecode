@@ -22,6 +22,8 @@ body {
 }
 #header {
 	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
 	height: 3.5em;
 	background: #000;
 	padding: .4em 0;
@@ -33,6 +35,10 @@ body {
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
+}
+#content{
+	margin-left:auto;
+	margin-right:auto;
 }
 h2 {
 	color: #fff;
