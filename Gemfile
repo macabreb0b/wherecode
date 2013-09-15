@@ -6,14 +6,10 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record !! changed below 
 # gem 'sqlite3'
 
-# start of new code
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
-# end of new code
+#stuff for heroku
+gem 'rails_12factor', group: :production
+gem 'pg'
+ruby "2.0.0"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
