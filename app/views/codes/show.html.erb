@@ -8,7 +8,7 @@
 <% end %>
 <br />
 <!-- Put Google Maps img here -->
-<a href="https://www.google.com/maps?q=<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>"><img src="http://maps.googleapis.com/maps/api/streetview?sensor=false&size=300x300&location=<%= @code.address.tr('^A-Za-z0-9', '+') %>" alt="Google Streetview" /></a>
+<a href="https://www.google.com/maps?q=<%= @code.address.tr('^A-Za-z0-9', '+') %>"><img src="http://maps.googleapis.com/maps/api/streetview?sensor=false&size=300x300&location=<%= @code.address.tr('^A-Za-z0-9', '+') %>" alt="Google Streetview" /></a>
 
 <br><br>
 <% else %>
