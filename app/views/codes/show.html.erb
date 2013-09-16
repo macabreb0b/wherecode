@@ -3,7 +3,7 @@
 <h1><%= @code.code %></h1>
 
 <p>Address / Details:</p>
-<%= for each @code.address.split("\n") do |line| %>
+<% @code.address.split("\n").each do |line| %>
 <p><%= puts line %></p>
 <% end %>
 
