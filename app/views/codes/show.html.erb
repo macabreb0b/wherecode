@@ -10,7 +10,7 @@
 <br />
 <br />
 <!-- Put Google Maps iFrame here -->
-<img src="http://maps.google.com/maps/api/staticmap?center=<%= @code.address.gsub("\n", ' ') %>&zoom=8&size=300x300&maptype=roadmap&sensor=false" alt="Static Map of Chicago, Illinois"></img>
+<img src="http://maps.google.com/maps/api/staticmap?center=<%= @code.address.gsub("\n", ' ').gsub(" ", "%20") %>&zoom=8&size=300x300&maptype=roadmap&sensor=false" alt="Static Map of Chicago, Illinois"></img>
 
 <br><br>
 <% else %>
