@@ -9,9 +9,8 @@
 
 <br />
 <br />
-<!-- Put Google Maps iFrame here -->
-<img src="http://maps.google.com/maps/api/staticmap?center=<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>&zoom=8&size=300x300&maptype=roadmap&sensor=false" alt="Static Map of Chicago, Illinois"></img>
-<img src="http://maps.google.com/maps/api/staticmap?size=255x255&maptype=roadmap&sensor=false&markers=color:red|label:A|<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>" alt="Google Map of Location" />
+<!-- Put Google Maps img here -->
+<a href="https://www.google.com/maps?q=<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>"><img src="http://maps.googleapis.com/maps/api/streetview?sensor=false&size=300x300&location=<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>" alt="Google Streetview" /></a>
 
 <br><br>
 <% else %>
