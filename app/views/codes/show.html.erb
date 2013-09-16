@@ -3,7 +3,11 @@
 <h1><%= @code.code %></h1>
 
 <p>Address / Details:</p>
-<%= @code.address.gsub("\n", '<br>') %>
+<%= for each @code.address.split("\n") do |line| 
+puts line
+end
+%>
+
 <br />
 <br />
 <!-- Put Google Maps iFrame here -->
