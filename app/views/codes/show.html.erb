@@ -6,6 +6,7 @@
 <%= @code.address %>
 <br />
 <br />
+<%= link_to "Get Google Map", "https://maps.google.com/?q=#{@code.address.to_s}", :class => 'cta' %>
 <br><br><br>
 <% else %>
 	<h1>Oops, there's nothing here - try another Code:</h1>
