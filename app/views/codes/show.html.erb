@@ -3,8 +3,10 @@
 <h1><%= @code.code %></h1>
 
 <p>Address / Details:</p>
-<%= @code.address %><br>
-<%= link_to "Google Maps It", "http://maps.google.com/?q=#{@code.address}", :class => 'cta'%>
+<%= @code.address %>
+<br />
+<br />
+<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?q=243+summer+st+&amp;ie=UTF8&amp;hq=&amp;hnear=<%= puts @code.address %>&amp;output=embed"></iframe><br />
 <br><br><br>
 <% else %>
 	<h1>Oops, there's nothing here - try another Code:</h1>
