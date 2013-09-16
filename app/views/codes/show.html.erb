@@ -6,8 +6,6 @@
 <% @code.address.split("\n").each do |line| %>
 <%= line %><br />
 <% end %>
-
-<br />
 <br />
 <!-- Put Google Maps img here -->
 <a href="https://www.google.com/maps?q=<%= @code.address.gsub("\n", ' ').gsub(" ", "+") %>"><img src="http://maps.googleapis.com/maps/api/streetview?sensor=false&size=300x300&location=<%= @code.address.tr('^A-Za-z0-9', '+') %>" alt="Google Streetview" /></a>
@@ -22,7 +20,6 @@
 		<%= submit_tag("Submit", name: nil, class: 'cta') %>
 	</p>
 	<% end %>
-<br>
 <p>OR</p>
 <% end %>
 
